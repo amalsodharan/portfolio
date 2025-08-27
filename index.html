@@ -32,6 +32,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T3CLFXF2SL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T3CLFXF2SL');
+    </script>
 
 </head>
 
@@ -290,20 +299,39 @@
                 </div> <!-- entry -->
 
                 <div class="column entry">
-                    <a href="images/folio/img5.jpeg" class="entry__link glightbox" data-glightbox="title: Time Tracker; description: .entry__desc-02">
+                    <a href="images/folio/img8.png" class="entry__link glightbox" data-glightbox="title: Online Music Player; description: .entry__desc-06">
                         <div class="entry__thumb">
-                            <img src="images/folio/img5.jpeg" srcset="images/folio/img5.jpeg 1x, images/folio/img5.jpeg 2x" alt="">
+                            <img src="images/folio/img8.png" srcset="images/folio/img8.png 1x, images/folio/img8.png 2x" alt="">
                         </div>
                         <div class="entry__info">
-                            <h4 class="entry__title">Time Tracker</h4>
-                            <div class="entry__cat">Angular, Node JS</div>
+                            <h4 class="entry__title">Online Music Player</h4>
+                            <div class="entry__cat">Node JS, Express, HTML, CSS, PHP, JS, JQuery, Bootstrap</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-06">
+                        <p>
+                        A lightweight music player frontend built with HTML, CSS, JavaScript, jQuery, Bootstrap, and PHP, powered by a Node.js backend. Play, pause, and seek through tracks with a clean, responsive UI and a dynamic progress bar. Designed for fast loading, intuitive controls, and smooth playback across devices.
+                        <a href="https://github.com/amalsodharan/music-player-frontend" target="_blank">Project Link</a>.
+                        </p>
+                    </div>
+                </div> <!-- entry --> 
+
+                <div class="column entry">
+                    <a href="images/folio/img9.png" class="entry__link glightbox" data-glightbox="title: Weather Health Alert System; description: .entry__desc-02">
+                        <div class="entry__thumb">
+                            <img src="images/folio/img9.png" srcset="images/folio/img9.png 1x, images/folio/img9.png 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Weather Health Alert System</h4>
+                            <div class="entry__cat">Node JS, Express</div>
                         </div>
                     </a>
 
                     <div class="glightbox-desc entry__desc-02">
                         <p>
-                        A time management tool that records work sessions and tracks productivity. Allows users to log hours, generate reports, and analyze time spent on tasks, improving efficiency and workflow.
-                        <a href="#">Project Link</a>.
+                        A lightweight Node.js-based alert system that fetches real-time weather data (temperature, humidity, wind, description, etc.) and maps it to health risks with preventive measures.Built for easy integration, JSON-based customization, and smooth performance.
+                        <a href="https://github.com/amalsodharan/weather-prevention-backend" target="_blank">Project Link</a>.
                         </p>
                     </div>
                 </div> <!-- entry -->
@@ -365,25 +393,6 @@
                     </div>
                 </div> <!-- entry -->
 
-                <div class="column entry">
-                    <a href="images/folio/img4.jpeg" class="entry__link glightbox" data-glightbox="title: Church Demo; description: .entry__desc-06">
-                        <div class="entry__thumb">
-                            <img src="images/folio/img4.jpeg" srcset="images/folio/img4.jpeg 1x, images/folio/img4.jpeg 2x" alt="">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">Church Demo</h4>
-                            <div class="entry__cat">React, Boostrap</div>
-                        </div>
-                    </a>
-
-                    <div class="glightbox-desc entry__desc-06">
-                        <p>
-                        A digital platform for managing church activities, including event scheduling, sermon recordings, and donations. Enhances community engagement with features like live streaming and prayer requests.
-                        <a href="https://github.com/amalsodharan/Church_Demo" target="_blank">Project Link</a>.
-                        </p>
-                    </div>
-                </div> <!-- entry --> 
-
             </div> <!-- folio entries -->
 
 
@@ -405,6 +414,32 @@
                                 </div>
                                 <p>
                                     An AI chatbot built with Angular and Node.js for real-time, intelligent conversations. Supports contextual replies, user management, and seamless integration for automated assistance.
+                                </p>
+                            </div> <!-- end s-testimonials__slide -->
+
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/avatars/music_player.png" alt="Author image" class="s-testimonials__avatar">
+                                    <cite class="s-testimonials__cite">
+                                        <strong>Online Music Player</strong>
+                                        <span>Node JS, Express, HTML, CSS, PHP, JS, JQuery, Bootstrap</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                    A lightweight music player with Play, pause, and seek through tracks features with a clean, responsive UI and a dynamic progress bar. Designed for fast loading, intuitive controls, and smooth playback across devices.
+                                </p>
+                            </div> <!-- end s-testimonials__slide -->
+
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/avatars/weather.png    " alt="Author image" class="s-testimonials__avatar">
+                                    <cite class="s-testimonials__cite">
+                                        <strong>Weather Health Alert System</strong>
+                                        <span>Node JS, Express</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                    A lightweight alert system that fetches real-time weather data and maps it to health risks with preventive measures.Built for easy integration and smooth performance.
                                 </p>
                             </div> <!-- end s-testimonials__slide -->
 
