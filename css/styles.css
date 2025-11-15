@@ -4459,7 +4459,34 @@ td:last-child {
 }
 
 @media screen and (max-width: 768px) {
-    .live-project-card > div:last-child {
-        padding: 2rem 1.5rem !important;
-    }
+  /* keep the reduced padding you already added */
+  .live-project-card > div:last-child {
+    padding: 2rem 1.5rem !important;
+  }
+
+  /* Make any button anchors inside the card full-width and stacked */
+  .live-project-card > div:last-child .btn {
+    /* override inline flex:1; if present */
+    flex: none !important;
+    display: inline-flex;      /* keep icon + label horizontally aligned */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Add vertical spacing between stacked buttons */
+  .live-project-card > div:last-child .btn + .btn {
+    margin-top: 12px;
+  }
+
+  /* Ensure SVG icons inside buttons don't shift the vertical alignment */
+  .live-project-card > div:last-child .btn svg {
+    vertical-align: middle;
+    /* optional: keep a bit of spacing to the label */
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
 }
