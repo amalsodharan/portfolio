@@ -4054,7 +4054,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 .s-testimonials {
     padding-top   : var(--vspace-4_5);
-    padding-bottom: var(--vspace-4);
+    padding-bottom: var(--vspace-2);
 }
 
 .s-testimonials__header {
@@ -4445,5 +4445,21 @@ td:last-child {
 @media screen and (max-width: 400px) {
     .ss-go-top {
         right: -2rem;
+    }
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.live-project-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .live-project-card > div:last-child {
+        padding: 2rem 1.5rem !important;
     }
 }
